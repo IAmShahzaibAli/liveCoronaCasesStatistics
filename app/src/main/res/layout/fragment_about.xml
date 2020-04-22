@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    >
+
+ <!-- Rate Us VIEW-->
+ <androidx.cardview.widget.CardView
+     android:id="@+id/RateUs_CardView"
+     android:layout_width="match_parent"
+     android:layout_height="150dp"
+     android:layout_margin="10dp">
+
+  <RelativeLayout
+      android:id="@+id/RateUs_RL"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+
+      >
+
+   <TextView
+       android:id="@+id/RateUsTitle_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:layout_centerHorizontal="true"
+       android:text="How was your experience ?"
+       android:textColor="@color/Silver"
+       android:textSize="16dp"
+       android:textStyle="bold" />
+
+   <ImageView
+       android:id="@+id/RatingFacesSad"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:layout_marginLeft="30dp"
+       android:layout_marginTop="60dp"
+       android:layout_alignParentLeft="true"
+       android:outlineSpotShadowColor="@color/Black"
+       android:src="@drawable/ratingsad" />
+
+   <ImageView
+       android:id="@+id/RatingFacesHappy"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:layout_marginTop="60dp"
+       android:layout_centerHorizontal="true"
+       android:outlineSpotShadowColor="@color/Black"
+       android:src="@drawable/ratinghappy" />
+
+   <ImageView
+       android:id="@+id/RatingFacesSmiley"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:layout_alignParentRight="true"
+       android:layout_marginTop="60dp"
+       android:layout_alignLeft="@id/RatingFacesHappy"
+       android:outlineSpotShadowColor="@color/Black"
+       android:layout_marginLeft="220dp"
+       android:src="@drawable/ratingsmiley" />
+
+
+  </RelativeLayout>
+ </androidx.cardview.widget.CardView>
+ <!-- Download Other Apps VIEW-->
+ <androidx.cardview.widget.CardView
+     android:id="@+id/DownloadOtherApps_CardView"
+     android:layout_width="match_parent"
+     android:layout_height="100dp"
+     android:layout_below="@id/RateUs_CardView"
+     android:layout_margin="10dp">
+
+  <RelativeLayout
+      android:id="@+id/DownloadOtherApps_RL"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+
+      >
+
+   <TextView
+       android:id="@+id/DownloadOtherApps_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="70dp"
+       android:layout_marginTop="0dp"
+       android:text="Download Other Apps"
+       android:textColor="@color/Silver"
+       android:textSize="19dp"
+       android:textStyle="bold" />
+
+   <Button
+       android:id="@+id/DownloadOtherApp_Button"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/DownloadOtherApps_text"
+       android:layout_marginTop="10dp"
+       android:background="@color/Blue"
+       android:text="Free Apps"
+
+       android:textColor="@color/White"
+       android:textStyle="bold" />
+
+
+  </RelativeLayout>
+ </androidx.cardview.widget.CardView>
+
+
+ <androidx.cardview.widget.CardView
+     android:id="@+id/WHO_CardView"
+     android:layout_width="match_parent"
+     android:layout_height="100dp"
+     android:layout_below="@id/DownloadOtherApps_CardView"
+     android:layout_margin="10dp">
+
+  <RelativeLayout
+      android:id="@+id/who_RL"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+
+      >
+
+   <TextView
+       android:id="@+id/who_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="40dp"
+       android:layout_marginTop="0dp"
+       android:text="WORLD HEALTH ORGANIZATION"
+       android:textColor="@color/Silver"
+       android:textSize="18dp"
+       android:textStyle="bold" />
+
+   <Button
+       android:id="@+id/who_Button"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/who_text"
+       android:layout_marginTop="10dp"
+       android:background="@color/Blue"
+       android:text="READ MORE"
+
+       android:textColor="@color/White"
+       android:textStyle="bold" />
+
+
+  </RelativeLayout>
+ </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

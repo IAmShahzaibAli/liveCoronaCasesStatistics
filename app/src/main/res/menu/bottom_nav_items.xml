@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bottom_menu_all"
+        android:title="Global"
+        android:icon="@drawable/global"/>
+    <item android:id="@+id/bottom_menu_24hour"
+        android:title="Countries"
+        android:icon="@drawable/flag"/>
+    <item android:id="@+id/bottom_menu_about"
+        android:title="About"
+        android:icon="@drawable/ic_help_outline_black_24dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</menu>

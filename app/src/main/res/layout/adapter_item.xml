@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/adapter_hitem_rv"
+    android:layout_marginTop="5dp"
+    android:padding="5dp"
+    android:background="@color/White">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/Global_CardView_1"
+        android:backgroundTint="@color/Blue"
+        app:cardCornerRadius="20dp"
+        android:background="@drawable/rv_items">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="United Kingdom"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/White"
+                android:textStyle="normal"
+                android:id="@+id/adapter_countryname"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cases"
+
+                android:layout_marginTop="15dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:id="@+id/adapter_casestxr"
+                android:layout_below="@id/adapter_countryname"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recoveries"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:id="@+id/adapter_recovertxt"
+                android:layout_below="@id/adapter_casestxr"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deaths"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:layout_below="@id/adapter_recovertxt"
+                android:id="@+id/adapter_deathstxt"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="90dp"
+                android:layout_below="@id/adapter_countryname"
+                android:layout_marginLeft="100dp"
+                android:paddingBottom="5dp"
+                app:cardBackgroundColor="@color/White"
+                android:id="@+id/total_cardview"
+                app:cardCornerRadius="20dp"
+                android:background="@drawable/total_cases_cardbg"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOTAL"
+                        android:textColor="@color/DarkGreen"
+                        android:textSize="15dp"
+                        android:id="@+id/totaltxt"
+                        android:layout_marginLeft="25dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="111111111"
+                        android:textSize="15dp"
+                        android:id="@+id/adapter_totalcases"
+                        android:layout_below="@id/totaltxt"
+                        android:layout_marginLeft="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="111111111"
+                        android:textSize="15dp"
+                        android:id="@+id/adapter_totalrecoveries"
+                        android:layout_below="@id/adapter_totalcases"
+                        android:layout_marginLeft="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="111111111"
+                        android:textSize="15dp"
+                        android:id="@+id/adapter_totaldeaths"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@id/adapter_totalrecoveries"
+                        />
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="90dp"
+                android:layout_below="@id/adapter_countryname"
+                android:layout_marginLeft="210dp"
+                android:paddingBottom="5dp"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/last24hour_cardview"
+                app:cardBackgroundColor="@color/White"
+                android:background="@drawable/in24hour_cases_cardbg"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TODAY"
+                        android:textSize="15dp"
+                        android:textColor="@color/DarkRed"
+                        android:id="@+id/in24hourtxt"
+                        android:layout_marginLeft="25dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="111111111"
+                        android:textSize="15dp"
+                        android:id="@+id/adapter_todaycases"
+                        android:layout_below="@id/in24hourtxt"
+                        android:layout_marginLeft="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="111111111"
+                        android:textSize="15dp"
+                        android:id="@+id/adater_todayrecoveries"
+                        android:layout_below="@id/adapter_todaycases"
+                        android:layout_marginLeft="10dp"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="111111111"
+                        android:textSize="15dp"
+                        android:id="@+id/adapter_todaydeaths"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@id/adater_todayrecoveries"
+                        />
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
